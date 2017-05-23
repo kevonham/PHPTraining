@@ -11,16 +11,18 @@
 <div><h2>お問い合わせ 確認</h2></div>
 
    <?php
-      $button = $_POST['send'];
-      $fname = $_POST['fname'];
-      $sname = $_POST['name'];
-      $gender = $_POST['gender'];
-      $address = $_POST['address'];
-      $num = $_POST['num'];
-      $madd = $_POST['madd'];
-      $resource = $_POST['resource'];
-      $category = $_POST['category'];
-      $question = $_POST['question'];
+      if(isset($_POST['send'])){
+          $fname = $_POST['fname'];
+          $sname = $_POST['name'];
+          $gender = $_POST['gender'];
+          $address = $_POST['address'];
+          $num = implode("-", $_POST['num']);
+          $madd = implode("@", $_POST['madd']);
+          $resource = implode(",", $_POST["resource"]);
+          /*checkbox要素は、変数を送信する、implode関数で文字列に*/
+          $category = $_POST['category'];
+          $question = $_POST['question'];
+        }
   ?>
 
 
