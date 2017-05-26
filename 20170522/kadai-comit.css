@@ -1,0 +1,106 @@
+.main {
+width:470px;
+height:600px;
+margin:20px auto 20px auto;
+padding:20px 20px 20px 20px;
+background:#F5FFFA;
+border:1px solid darkgray
+}
+
+body {
+background: SkyBlue;
+}
+
+h1 {
+display: flex;
+color:#FF7F50;
+font-size:25px;
+margin:0px 0px 15px 0px;
+justify-content:center;
+}
+
+h2 {
+color:black;
+font-size:15px;
+margin:0px 0px 15px 0px;
+}
+
+
+input {
+font-size:14px;
+}
+select {
+font-size:14px;
+}
+textarea {
+font-size:14px;
+}
+div {
+margin:0px 0px 10px 0px;
+}
+
+.fname{
+    display: flex;
+}
+.fname h2{
+    width: 200px;
+    display: flex;
+}
+
+.name{
+    display: flex;
+}
+.name h2{
+    width: 200px;
+}
+
+.gender{
+    display: flex;
+}
+.gender h2{
+    width: 200px;
+}
+
+.address{
+    display: flex;
+}
+.address h2{
+    width: 200px;
+}
+
+.num{
+    display: flex;
+}
+.num h2{
+    width: 200px;
+}
+
+.madd{
+    display: flex;
+}
+.madd h2{
+    width: 200px;
+}
+
+.resource{
+    display: flex;
+}
+.resource h2{
+    width: 200px;
+ }
+
+.category{
+    display: flex;
+}
+.category h2{
+    width: 200px;
+}
+.question h2{
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.button{
+    justify-content:center;
+    display: flex;
+}
