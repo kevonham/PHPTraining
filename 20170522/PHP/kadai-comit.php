@@ -7,7 +7,6 @@
     <title>お問合せ　入力</title>
 </head>
 <body>
-
     <form action = "kadai-comitconf.php" method = "post" onsubmit="return validate()">
 
         <h1>お問い合わせ</h1>
@@ -86,10 +85,11 @@
                         </div>
 
                         <div class = "button">
-                            <div>
-                                <input type = "submit" name = "send" value = "確認"/>
-                                <input type = "reset" name = "clear" value = "クリア"/>
-                            </div>
+                            <input type = "submit" name = "send" value = "確認"/>
+                        </div>
+
+                        <div class = "button2">
+                            <input type = "reset" name = "clear" value = "クリア"/>
                         </div>
 
                     </div>

@@ -1,0 +1,135 @@
+.main{
+    width:470px;
+    height:725px;
+    margin:20px auto 20px auto;
+    padding:20px 20px 20px 20px;
+    border: #C0C0C0 solid 10px;
+    border-image:url(strip.png) 10 10 round;
+}
+
+h1{
+    display: flex;
+    justify-content:center;
+}
+
+h2{
+    display: flex;
+    font-size: 15px;
+    justify-content:center;
+}
+
+.fname, .gender, .address, .num, .madd, .resource, .category, .question {
+    width: 300px;
+    margin:15px auto 15px auto;
+    background: #dbebf8;
+    border-radius: 25px 0px 0px 25px;/*左側の角を丸く*/
+}
+
+
+
+label{
+color: #505050;/*文字色*/
+padding: 0.5em;/*文字周りの余白*/
+display: inline-block;/*おまじない*/
+line-height: 1.3;/*行高*/
+background: #dbebf8;/*背景色*/
+vertical-align: middle;/*上下中央*/
+border-radius: 25px 0px 0px 25px;/*左側の角を丸く*/
+}
+
+label:before {
+content: '●';
+color: white;
+margin-right: 8px;
+}
+
+.button {
+    width: 250px;
+    margin:20px auto 20px auto;
+}
+
+.button input{
+    font-size: 20px;
+    margin: 10px;
+    font-weight: bold;
+    border-radius: 25px;
+    padding: 10px 0px 10px 30px;
+    border: none;
+    width: 100px;
+    text-align: left;
+}
+.button input:hover{
+letter-spacing: 8px; transition: all 0.5s;
+}
+.button input:active{
+    letter-spacing: 4px;
+}
+
+.button button{
+    font-size: 20px;
+    margin: 10px;
+    font-weight: bold;
+    border-radius: 25px;
+    padding: 10px 0px 10px 30px;
+    border: none;
+    width: 100px;
+    text-align: left;
+}
+.button button:hover{
+letter-spacing: 8px; transition: all 0.5s;
+}
+.button button:active{
+    letter-spacing: 4px;
+}
+
+.ub{
+    display: flex;
+    justify-content: center;
+}
+
+.urlbutton {
+    display: inline-block;
+	width: 200px;
+	height: 40px;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	position: relative;
+	z-index: 2;
+	background-color: #333;
+	border: 2px solid #333;
+	color: #fff;
+	line-height: 40px;
+}
+.urlbutton:hover {
+	background-color: #fff;
+	border-color: #33FF00;
+	color: #33FF00;
+}
+.urlbutton::before,
+.urlbutton::after {
+    position: absolute;
+    z-index: -1;
+    display: block;
+    content: '';
+	top: 0;
+	width: 50%;
+	height: 100%;
+	background-color: #333;
+}
+.urlbutton::before {
+	right: 0;
+}
+.urlbutton::after {
+	left: 0;
+}
+.urlbutton:hover::before,
+.urlbutton:hover::after {
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+	width: 0;
+	background-color: #33FF00;
+}

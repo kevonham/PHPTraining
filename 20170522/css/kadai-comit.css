@@ -1,39 +1,46 @@
+
 .main {
-width:470px;
-height:600px;
-margin:20px auto 20px auto;
+width:650px;
+height:700px;
+margin:auto;
 padding:20px 20px 20px 20px;
-background:#F5FFFA;
-border:1px solid darkgray
+background:#FFFFCC;
+border: #C0C0C0 solid 10px;
+border-image:url(strip.png) 10 10 round;
 }
 
 body {
-background: SkyBlue;
+background #fdf5e6;
 }
 
 h1 {
 display: flex;
 color:#FF7F50;
-font-size:25px;
-margin:0px 0px 15px 0px;
+font-size:30px;
+margin:15px 0px 15px 0px;
 justify-content:center;
 }
 
 h2 {
 color:black;
-font-size:15px;
-margin:0px 0px 15px 0px;
+font-size:18px;
+margin:0px 0px 15px 40px;
 }
 
 
-input {
-font-size:14px;
+input[type="text"]
+ {
+width: 120px;
+font-size:17px;
+border-radius: 10px;
 }
 select {
-font-size:14px;
+font-size:17px;
+border-radius: 10px;
 }
 textarea {
-font-size:14px;
+font-size:20px;
+border-radius: 10px;
 }
 div {
 margin:0px 0px 10px 0px;
@@ -44,7 +51,6 @@ margin:0px 0px 10px 0px;
 }
 .fname h2{
     width: 200px;
-    display: flex;
 }
 
 .name{
@@ -100,7 +106,31 @@ margin:0px 0px 10px 0px;
     flex: 1 1 auto;
 }
 
-.button{
-    justify-content:center;
+.button input{
+    font-size: 20px;
+}
+
+
+.button {
     display: flex;
+    justify-content:center;
+    padding: 0.3em 1em;
+    text-decoration: none;
+    color: #67c5ff;
+}
+.button :hover {
+    background: #67c5ff;
+    color: white;
+}
+
+.button2 {
+    display: flex;
+    justify-content:center;
+    padding: 0.3em 1em;
+    text-decoration: none;
+    color: #67c5ff;
+}
+.button2 :hover {
+    background: #67c5ff;
+    color: white;
 }

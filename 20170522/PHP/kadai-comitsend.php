@@ -1,14 +1,3 @@
-<html lang="ja">
-<head>
-<meta charset="UTF-8">
-
-<title>お問い合わせ　終了</title>
-</head>
-<body>
-<center>
-<div><h2>お問い合わせ 完了</h2></div>
-<div>お問合せありがうございました。</div><br/>
-
 <?php
 //カウント値を保存しておくファイル
 $count=count(file("comitdata.csv"));
@@ -38,14 +27,22 @@ fwrite($fp, $count.",".$alldata."\n");//値書き込み
 fclose($fp);//ファイル閉じる*/
 ?>
 
-<div>あなたのお問合せ番号は<?php echo $count; ?>です。</div>
-<div>お問合せ日時:<?php echo $now; ?><div>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <link rel = "stylesheet" href = "comitsend.css" type = "text/css">
+    <title>お問い合わせ　終了</title>
+</head>
 
-<br>
-<button onclick = "location.href='http://localhost/PHPTraining/20170522/kadai-comit.php'">
-お問合せに戻る</button><br/>
-
-</center>
-</form>
+<body>
+    <div class = "main">
+        <div><h2>お問い合わせ 完了</h2></div>
+        <div class = "thank">お問合せありがうございました。</div>
+        <div class = "num">あなたのお問合せ番号は<?php echo $count; ?>です。</div>
+        <div class = "data">お問合せ日時:<?php echo $now; ?></div>
+        <div class = "button">
+            <button onclick = "location.href='http://localhost/PHPTraining/20170522/kadai-comit.php'">お問合せに戻る</button>
+        </div>
+    </div>
 </body>
 </html>
