@@ -18,6 +18,10 @@ $resource = $_POST['resource'];
 $category = $_POST['category'];
 $question = $_POST['question'];
 
+$question = str_replace(",", "<1>", $question);
+$question = str_replace(PHP_EOL, "<2>", $question);
+
+
 $data = [$fname, $sname, $gender, $address, $num, $madd, $resource, $category, $question];
 
 $alldata = implode(",", $data);

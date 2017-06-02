@@ -31,7 +31,14 @@
                 echo "<tr>";
                 $data = explode(",", $line);
                 for ($i=0; $i < count($data); $i++) {
+                    $data[$i] = str_replace("<1>", ",", $data[$i]);
+                    $data[$i] = str_replace("<2>", "<br>", $data[$i]);
+                    if($i%2 === 0){
+                    echo "<td class = even>".$data[$i]."</td>";
+                    }
+                    else{
                     echo "<td>".$data[$i]."</td>";
+                    }
                 }
                 echo "</tr>";
             }
@@ -39,4 +46,4 @@
         </tbody>
     </table>
 
-<a href = "kadai-comit.php">フォームに戻る</a>
+    <a href = "kadai-comit.php">フォームに戻る</a>

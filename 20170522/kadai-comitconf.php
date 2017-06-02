@@ -24,6 +24,7 @@ else{
 
 if(isset( $_POST['question']) ){
     $question = $_POST['question'];
+    $question1 = str_replace(PHP_EOL, "<br>", $question);
 }
 else{
     $question = "";
@@ -73,8 +74,11 @@ else{
                 <label>質問カテゴリ:</label><?php echo $category; ?>
             </div>
 
-            <div class = "question">
-                <label>質問内容:</label><?php echo $question; ?>
+            <div class  = "menu">
+                <div class = "question">
+                    <label>質問内容:</label><?php echo $question; ?>
+                </div>
+                <span><?php echo $question1; ?></span>
             </div>
 
             <div class = "button">
